@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entreprise de service numérique">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="https://kit.fontawesome.com/f785a36f23.js" crossorigin="anonymous"></script>
+  <title>Entreprise de services numériques &amp;</title><meta charset="UTF-8">
+</head>
+<body>
+    <header id="mainHeader">
+        <figure class="headerLogo">
+          <img src="./images/Logo_choisi.jpg" alt="logo Digitata" >
+        </figure>
+        <nav class="headerNav"> 
+          <ul>
+              <li><a class="active" href="index.html" title="Information sur l'entreprise">Accueil</a></li>
+              <li><a href="propos.html" title="Information sur l'entreprise">A propos</a></li>
+              <li><a href="index.html#blocService1" title="les compétences de l'entreprise">Expertises</a></li>
+              <li><a href="equipe.html" title="découvrir notre équipe">L'équipe</a></li>
+              <li><a href="service.html" title="les prestations de l'entreprise">Services</a></li>
+              <li><a href="contact.html" title="nous contactez">Contact</a></li>
+           </ul>
+        </nav>
+        <button class="menuToggle">
+          <img src="./images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu">
+        </button>
+     <!-- <button id="menuToggle">
+          <img src="/images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu">
+      </button>-->
+  </header><!--Ici se termine le #mainHeader-->
+    <main id="pageContact">
+         <div class="contactHeader">
+             <h1 class="contactTitle">Contactez-nous</h1>
+             <p class="contactText" >Merci de compléter le formulaire suivant pour nous.<br><br>
+                    Tous les champs de ce formulaire sont requis.</p>
+         </div>
+          <form id="formContact" method="POST" action="merci.html">
+            <div class="contactForm">
+                <input type="text" class="formControl" name="fName" id="fName" placeholder="Nom" required>
+                <input type="text" name="lName" class="formControl" id="lName" placeholder="Prénom" required>
+                <input type="email" name="e-mail" class="formControl" id="e-mail" placeholder="E-mail" required>
+                <textarea name="message" id="message" class="formControl" placeholder="Message" cols="30" rows="10" required></textarea>
+                <input  class="submit" type="submit" class="formControl submit" value="ENVOYER">
+            </div>
+          </form>
+    </main><!--Ici se termine le #pageContent-->
+    <footer id="mainFooter"> 
+        <address class="location">
+             <span>
+                 <i class="fas fa-map-marker-alt"></i>
+                 <p>
+                      22,Boulevard de l'Oise, 95000 CERGY <br>
+                 </p>
+             </span>
+             <span>  
+                 <i class="fas fa-phone-volume"></i>
+                 <p>
+                     06 50 86 01 48
+                 </p>
+             </span>
+             <span>
+                 <i class="fas fa-envelope-square"></i>
+                 <p>
+                     info@DIGITATA-IT.com
+                 </p>
+             </span>
+        </address>
+        <h2 class="title">#Suivez-nous</h2> 
+        <ul class="linkMedia" >
+             <li><a href="#"><img src="./images/tweet.PNG" alt="twitter"></a></li>
+             <li><a href="#"><img src="./images/face.PNG" alt="facebook"></a></li>
+             <li><a href="#"><img src="./images/link.PNG" alt="linkedln"></a></li>
+             <li><a href="#"><img src="./images/insta.PNG" alt="Instagram"></a></li>
+         </ul> 
+       <p class="copyright">&copy; Copyright DIGITATA-IT - 2021</p>
+   </footer><!--Ici se termine le #mainFooter-->
+</body>
+</html>
