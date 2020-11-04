@@ -110,12 +110,12 @@ main{
      .menuToggle {
         width: 54px;
         height: 54px;
-        background-color: transparent;
+        background-color: #191970;
         border: none;
         background-size: cover;
         align-self: start;
         margin-left: auto;
-       /* border-radius: 50%;*/
+       border-radius: 50%;
     }
     .blocImg{
         width:-webkit-fill-available;
@@ -220,20 +220,19 @@ main{
         color: #191970;
         text-align: star;
         align-self: center;
-        width: 30%;
+        width: 41%;
     }
    .blocEnteteContent{
-        width: 30%;
+        width:41%;
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        margin: 3em;
         align-self: center;
     }
     .trait{
-        width: 60%;
+        width: 25%;
         border-top:0.5em solid #191970;
-        margin-right: 2em;
+        margin-right: 1em;
      }
      .blocItemHeading{
         /*font-size: 66px;*/
@@ -250,7 +249,7 @@ main{
     }
     #linkMore {
         text-decoration: none;
-        width: 63.9%;
+        width: 75%;
         display: flex;
         justify-content: flex-end;
         text-align: center;
@@ -261,7 +260,7 @@ main{
         left: 0;
         transition: border-color 400ms ease-out; 
         transition: background-color 400ms ease-out; 
-        padding-top: 103px;
+        padding-top: 200px;
     }
     #linkMore .plus{
         background: rgba(26, 43,109, 1);
@@ -292,111 +291,119 @@ main{
         transition: border-color 400ms ease-out; 
         transition: background-color 400ms ease-out; 
     }
-    #link{
+    .link{
         color: rgb(212, 19,23, 1);
         text-decoration: none;
         position: absolute;
-    /* margin-top: 223px; */
-        top: 200px;
-        left: 90px;  
+        margin-top: 223px;
+        top: 5px;
+        left: 100px;
+         
    }
-   #link:hover{
+   .link:hover{
        color: rgba(26, 43,109, 1);
        transition: border-color 400ms ease-out; 
        transition: color 400ms ease-out; 
    }
-   #bloc{
+   .bloc{
        max-width: 100%;
-       background:url(../images/bg_service.jpg);
-       
+       background:url(../images/bg_service.jpg);   
    }
    .service{
     font: normal normal normal 55px/1.4em spinnaker,sans-serif;
     color: #1A2B6D;
     margin-top: -64px;
 }
-   #blocService1{
-       width: 100%;
-       height: 40vh;
+   .blocService1{
+       width: 75%;
        display: flex;
-       flex-direction: row;
-       justify-content: center;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       margin-left: 150px;
     }
-    .blocService2{
+    /*.blocService2{
         margin-top: 40px;
         margin-bottom: 60px;
-    }
-    
-    #mainFooter{
-        background: #152F4F;
-        color:white;
-        height: 300px;
-        width: 100%;
-        font-size: .5em;
-        position: relative;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: var(--white);
-    }
-   .linkMedia{
-       display: flex;
-       flex-direction: row;
-       /*justify-content: flex-end;*/
-       width: 15%;
-       align-self: flex-end;
-       padding: 10px;
-   }
-   .linkMedia li{
-       list-style: none;
-       /*border: 1px solid #000000;*/
-       padding: 5px;
-       width: 50px;
-       background-color: transparent;
-   }
-   .linkMedia li a img{
-    color: white;
-    transition: color .2s; 
-  }
-  .linkMedia li a img:hover{
-    text-decoration:none;
-    color:#4180CB;
-    }
-   .title{
-    font: normal normal normal 35px/1em spinnaker,sans-serif;
-    color: var(--white);
-    align-self: flex-end;
-    margin: 5px;
-   }
-   .copyright{
-       border-top:1px solid rgba(255,255,255,.1);
-       width: 60%;
-} 
-.location{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: auto;
-}
-.location i {
-    font-size: 18px;
-    padding-right: 15px;
-}
-.location p{
-    font-size: 15px;
-}
-.location h2{
-    margin: 0;
-}
-address span{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    }*/
+
+    /**** Fin Accueil ***/
+
+     /* Footer */
+
+
+   ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
 }
 
-/**** Fin Accueil ***/
+    ul.icons li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+    }
+
+        ul.icons li:last-child {
+            padding-right: 0;
+        }
+
+        ul.icons li .icon:before {
+            font-size: 2em;
+        }
+
+	#footer {
+		padding: 8em 0 6em 0;
+		/*background: #f6f6f6;
+		color: #aaa;*/
+        text-align: center;
+        background: #152F4F;
+        color:white;
+	}
+
+		#footer a {
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			color:white;
+			text-decoration: none;
+		}
+
+			#footer a:active, #footer a:hover {
+				color: #666;
+			}
+
+		#footer .icons {
+			font-size: 1.5em;
+		}
+
+			#footer .icons li {
+                padding-right: 2.5em;
+                list-style-type: none;
+                width: 100px;
+			}
+
+		#footer .copyright {
+			margin: 2em 0;
+			padding: 0;
+			text-align: center;
+		}
+
+			#footer .copyright li {
+				border-left: solid 1px rgba(144, 144, 144, 0.25);
+				display: inline-block;
+				list-style: none;
+				margin-left: 1.5em;
+				padding-left: 1.5em;
+			}
+
+				#footer .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+                }
+                
+/***FIN FOOTER ***/
+
 #pageContact{
     border-top: solid 1px var(--bleuf);
     margin: 0;
@@ -580,10 +587,8 @@ address span{
     border-radius: 0 0 0 0;
 }
 .blocItem{
-    width: 25%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
+    width: 26%;
+    height: 45vh;
 }
 .blocItemElement1{
     position: absolute;
@@ -691,66 +696,119 @@ address span{
         text-align: center;
     }
 
+                    /******* Responsive webdesign *******/
+
+/**** mobile phone *****/
+
+@media only screen and (min-width:320px){
+    
+      main{
+          width: auto;
+          margin: 0;
+      }
+}
+
+@media only screen and (max-width:320px){
+    
+    main{
+        width: auto;
+        margin: 0;
+    }
+    .blocImg{
+      display: none;
+  } 
+  
+}
 
 
+/**** Tablet ****/
 
- /* Mise en page flexible et responsive */
-
-@media screen and (min-width: 770px){
- 
-    /* Taille d'écran moyen */
-    .headerNav{
-        position: static;
-        background-color: transparent;
+@media only screen and (min-width:321px) and (max-width:768px){
+      
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    .blocImg{
+        display: none;
+    } 
+    .blocContent{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-left: 0px;
-        width: 62%;
+        flex-direction: row;
+        background-color: #191970;
+        color:white;
+        width: auto;
+        height: 320px;
+    }
+    .blocEnteteContent{
+        margin: 0;
+        width: auto;
+    }
+    .blocEnteteHeader{
+        margin-left: 15px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.2em;
+        width: 353px;
+    }
+    .blocItemText{
+        margin: 0;
+        color: rgba(255, 255, 255, 1);
+    }
+    .trait{
+        display: none;
+       /* border-top: 0.3em solid rgba(255, 255, 255, 1);
+        align-self: center;*/
+    }
+    #linkMore .plus{
+        width: 60px;
+        background-color:rgba(255, 255, 255, 1) ;
+        color: #191970;
+    }
+    #linkMore{
+        
+        padding-top: 230px;
+    }
+    #linkMore .savoir:hover{
+        background: rgba(255, 255,255, 1); 
+        color: #191970;
+    }
+    #linkMore .plus:hover{
+        background: rgb(212, 19,23, 1);
+        color:rgba(255, 255,255, 1);  ;
+     }
+    .service{
+        margin: 0;
+        text-align: center;
+    }
+    #mainHeader{
+        height: 126px;
+    }
+    .headerNav{
+        width: 100%;
+        padding: 0;
+        top: 82px;
+        margin-left: 3px;
     }
     .headerNav ul{
         flex-direction: row;
         justify-content: space-around;
-        height: 40px;
+       /* height: 40px;*/
         align-items: center;
-        
+        width: 100%;
     }
-    .headerNav li{
-        width: 152px;
-        
-    }
-    .headerNav a{
-        font-size: 1.6em;
-        padding: 0 2px;
-    }
-    .headerLogo{
-        display: block;
-        border: 0;
-        width: 20%;
-        padding: 5px;
-        position: relative;
-        height:100px;
-    }
-    main{
-        flex-direction: column;
-    }
-    .menuToggle {
-        display: none;
-        text-align: right;
-        color: #191970;
-    }
-    .cartes{
+
+   
+    .cartes.bloc {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .carte{
+    .carte{ 
         flex: 0 0 32%;
         display: flex;
     }
     .carte a figure img{
         max-width: 100%;
-        margin-left: 197px;
     }
     .carteEntete{
         background-color: #f9fafa;
@@ -765,22 +823,64 @@ address span{
         text-align: center;
         margin-left: 100px;
     }
- }
-@media screen and (min-width: 1024px){
-    
-}
-@media screen and (min-width: 1200px){
-    /* Taille  d'écran grande */
-    .carte{
-        flex: 0 0 32%;
+
+    #footer {
+        padding: 3em 0 2em 0;
     }
-    .centre{
+
+        #footer .icons {
+            font-size: 1em;
+        }
+
+}
+
+/**** Desktop ****/
+
+@media only screen and (min-width:769px){
+
+    .headerNav{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0px;
+        width: 62%;
+    }
+    .headerNav ul{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 80px;
+        align-items: center;
+        width: 100%;
+    }
+    .headerLogo{
+        display: block;
+        border: 0;
+        width: 20%;
+        padding: 5px;
+        position: relative;
+        height:100px;
+    }
+     
+    .menuToggle {
+        display: none;
+        text-align: right;
+        color: #191970;
+    }
+    .centre,{
         width: 75%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         margin-top: 130px;
         justify-content: space-evenly;
+    }
+    .cartes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
     }
     .carte a figure img{
         max-width: 100%;
@@ -799,4 +899,17 @@ address span{
         text-align: center;
         margin-left: 100px;
     }
+
+    #footer {
+        padding: 6em 0 4em 0;
+    }
+         
 }
+@media screen and (min-width: 1200px){
+      .carte{
+          flex: 0 0 32%;
+      }
+}
+
+
+
