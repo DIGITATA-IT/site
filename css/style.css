@@ -1,5 +1,4 @@
 @import url('https://fonts.google.com/specimen/Roboto?sidebar.open=true&selection.family=Open+Sans|Roboto:ital@0;1');
-
 :root {
     --bleuf:#191970;
     --black : #262626;
@@ -687,14 +686,14 @@ main{
         text-align: center;
         font-style: italic;
     }
-    .carte a figure div h2{
+    .carte a  div h2{
         margin-top: 5px;
         padding: 5px;
         text-align: center;
         font-size: 1em;
         background-color: #cccccc;
     }
-    .carte a figure div p{
+    .carte a  div p{
         padding: 10px;
         background-color: #fff;
         text-align: center;
