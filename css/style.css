@@ -506,6 +506,7 @@ main{
     }
     .expertiseItems ul li{
         list-style-type: none;
+        padding: 0;
     }
    .missionContent{
        margin-top: 0;
@@ -698,7 +699,9 @@ main{
         background-color: #fff;
         text-align: center;
     }
-
+   ul{
+       padding: 0;
+   }
                     /******* Responsive webdesign *******/
 
 /**** mobile phone *****/
@@ -829,6 +832,7 @@ main{
        /* height: 40px;*/
         align-items: center;
         width: 100%;
+        padding: 0;
     }
 
    
@@ -911,6 +915,7 @@ main{
         height: 80px;
         align-items: center;
         width: 100%;
+        padding: 0;
     }
     .headerLogo{
         display: block;
