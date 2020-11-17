@@ -6,8 +6,9 @@
   <meta name="description" content="Entreprise de service numérique">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/jquery-3.4.1.min.js"></script>
-  <script src="./js/menu.js"></script>
+  <script src="./js/jquery-3.4.1.min.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/contact.js" defer></script>
   <script src="https://kit.fontawesome.com/f785a36f23.js" crossorigin="anonymous"></script>
   <title>Entreprise de services numériques &amp;</title>
 </head>
@@ -33,23 +34,37 @@
           <img src="/images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu">
       </button>-->
   </header><!--Ici se termine le #mainHeader-->
-    <main id="pageContact">
-         <div class="contactHeader">
-             <h1 class="contactTitle">Contactez-nous</h1>
-             <p class="contactText" >Merci de compléter le formulaire suivant pour nous.<br><br>
-                    Tous les champs de ce formulaire sont requis.</p>
-         </div>
-          <form id="formContact" method="POST" action="merci.html">
-            <div class="contactForm">
-                <input type="text" class="formControl" name="fName" id="fName" placeholder="Nom" required>
-                <input type="text" name="lName" class="formControl" id="lName" placeholder="Prénom" required>
-                <input type="email" name="e-mail" class="formControl" id="e-mail" placeholder="E-mail" required>
-                <textarea name="message" id="message" class="formControl" placeholder="Message" cols="30" rows="10" required></textarea>
-                <input  type="submit" class="formControl submit" value="ENVOYER">
+  <section id="pageContent">
+    <main>
+        <h1>Contactez-nous</h1>
+        <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis.</p>
+        <form id="frmContact" action="merci.html" novalidate>
+            <div id="leftCol">  
+                <div>
+                    <label for="fName">Prénom</label>
+                    <input type="text" name="fName" id="fName" required>
+                </div>
+                <div>
+                    <label for="lName">Nom de Famille</label>
+                    <input type="text" name="lName" id="lName" required>
+                </div>
+                <div>
+                    <label for="eMail">Adresse e-mail</label>
+                    <input type="email" name="eMail" id="eMail" required>
+                </div>
             </div>
-          </form>
-    </main><!--Ici se termine le #pageContent-->
-    <footer id="footer"> 
+            <div id="rightCol">
+                <div>
+                    <label for="message">Votre Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</section><!--Ici se termine le #pageContent-->
+      
+<footer id="footer"> 
       <div class="container">
          <ul class="icons" >
               <li><a href="#"><img src="./images/tweet.PNG" alt="twitter"></a></li>

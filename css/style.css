@@ -119,13 +119,15 @@ main{
     .blocImg{
         width:-webkit-fill-available;
         max-height: 500px;
-        margin-top: 92px;
      }
      #pageContent{
-         width: 100%;
-         background-repeat: no-repeat;
-         background-size:cover;
-         background-color: #f9fafa;
+        padding: 100px 20px;
+        min-height: 100vh;
+        background-attachment: fixed;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-color: #f9fafa;
      }
     .blocEntete {
         display: flex;
@@ -133,12 +135,8 @@ main{
         background-color:#F0F8FF;
         height: auto;
         width: 100%;
-        /*margin-left: 31.7em;*/
         margin-top: 0.2em;
         position: static;
-    }
-    .blocEnteteService{
-        margin-top: 5em;
     }
     .serviceItems{
         width: 100%;
@@ -151,7 +149,6 @@ main{
         margin: 25px;
         text-align: center;
         padding: 10px; 
-       /* border: 5px solid black; */
         width: 46%; 
         text-align: justify;
         border: 0px solid rgba(0, 115, 159, 1);
@@ -159,20 +156,10 @@ main{
         border-radius: 0;
         color:#1A2B6D;
     }
-    .blocEnteteService{
-       /* color: hsl(324, 70%, 45%);
-        animation: wheelHueColor 10s infinite;
-        background-color: currentColor;*/
+    .blocEnteteService,.merci{
         background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
       }
 
-    
-    /*  @supports (background-blend-mode: overlay) {
-        .blocEnteteService {
-          background-image: linear-gradient(45deg, white 10%, black 90%);
-          background-blend-mode: overlay;
-        }
-      }*/
       @keyframes wheelHueColor {
         from, to { color: hsl(324, 70%, 45%); }
         10%      { color: hsl(360, 65%, 45%); }
@@ -210,8 +197,6 @@ main{
         flex-direction: column;
         background-color:#F0F8FF;
         height: auto;
-       /* max-width: 40%;*/
-       /* margin-left: 31.7em;*/
         margin-top: 0.2em;
         position: static;
         height: 290px;
@@ -237,7 +222,6 @@ main{
         margin-right: 1em;
      }
      .blocItemHeading{
-        /*font-size: 66px;*/
         line-height: 1em;
         margin: 15px 0px 35px 0;
         text-align: center;
@@ -323,11 +307,6 @@ main{
        justify-content: space-around;
        margin-left: 150px;
     }
-    /*.blocService2{
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }*/
-
     /**** Fin Accueil ***/
 
      /* Footer */
@@ -354,8 +333,6 @@ main{
 
 	#footer {
 		padding: 8em 0 6em 0;
-		/*background: #f6f6f6;
-		color: #aaa;*/
         text-align: center;
         background: #152F4F;
         color:white;
@@ -406,73 +383,69 @@ main{
                 
 /***FIN FOOTER ***/
 
-#pageContact{
-    border-top: solid 1px var(--bleuf);
-    margin: 0;
-    padding: 30px;
-    text-align: center;
-   /* background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);*/
-    background-image: url(../images/contact.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: sans-serif;
-    height:auto;
-    
-    }
+/** contact **/
 
-    .contactHeader{
-        margin-top: 100px;
-        color: #fff;
-        text-transform: uppercase;
-        transition: all 4s ease-in-out;
-    }
-    
-    .contactTitle{
-        font-size: 32px;
-        line-height: 50px;
-    }
-    .contactText{
-        font-size: 16px;
-    }
-    form{
-        margin-top: 50px;
-        transition: all 4s ease-in-out;
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: column;
-        height: 30em;
-        align-items: center;
-        animation: ombre ease-in infinite alternate 500ms;
-    }
-    .formControl{
-        width: 600px;
-        background: transparent;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid gray;
-        color: #fff;
-        font-size: 18px;
-        margin-bottom: 16px;
-    }
-    input{
-        height: 45px;
-    }
-     input.submit{
-        background: #ff5722;
-        border-color: transparent;
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        height: 50px;
-        margin-top: 20px;
-        width: 42%;
-    }
-    input.submit:hover{
-    background-color: #f44336;
-    cursor: pointer;
-    }
+main{
+    background-color: rgba(155,155,155,0.8);
+    padding: 20px;
+    color: white;
+}
+main form{
+    display: grid;
+    border-top: solid 1px white;
+    animation: ombre ease-in infinite alternate 500ms;
+}
+main form > div > div {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 0;
+}
+main form > div:last-child > div:first-child{
+    margin: 0 0 20px 0;
+}
+main form label{
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+}
+main form textarea {
+    height: 150px;
+    resize: none;
+}
+main form button{
+    padding: 10px;
+    background-color: #1A2B6D;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+main form button:hover{
+    background-color: rgba(90, 101, 146, 1);
+}
+main form button:active{
+    background-color: red;
+}
+main form .msg{
+    font-size: .8em;
+    color: rgb(88, 1, 1);
+    margin-left: 20px;
+}
+main form input, main form textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(162, 162, 255);
+}
+main form input:valid, main form textarea:valid {
+    border: 1px solid green;
+}
+main form input.invalid, main form textarea.invalid {
+    border: 1px solid red;
+}
+
+
+/**FIN Contact**/
+
     #expertise{
         display: flex;
         flex-direction: column;
@@ -528,11 +501,9 @@ main{
     position: absolute;
     width: 50%;
     height: 15em;
-    /*background-color: rgba(242, 242, 242, 1);*/
     top: 160px;
     left: 23%;
     z-index: 1;
-    /*box-sizing: border-box;*/
     color: #1A2B6D;
     border: 0px solid rgba(0, 115, 159, 1);
     background-color: rgba(255, 255, 255, 1);
@@ -556,7 +527,6 @@ main{
     position: absolute;
     width: 50%;
     height: 15em;
-    /*background-color: rgba(242, 242, 242, 1);*/
     left: 23%;
     z-index: 1;
     border: 0px solid rgba(0, 115, 159, 1);
@@ -583,7 +553,6 @@ main{
     top: 193px;
     bottom: 0px;
     box-sizing: border-box;
-    /*border-left-style: none;*/
     border-radius: 0 0 0 0;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, 1);
@@ -598,8 +567,6 @@ main{
     width: 22%;
     height: 268px;
     background-color: rgba(242, 242, 242, 1);
-    /*top: 160px;
-    left: 23%;*/
     z-index: 1;
     box-sizing: border-box;
     color: #1A2B6D;
@@ -611,8 +578,6 @@ main{
     position: absolute;
     width: 22%;
     height: 17em;
-    /*top: 193px;
-    bottom: 0px;*/
     box-sizing: border-box;
     border-left-style: none;
     border-radius: 0 0 0 0;
@@ -701,6 +666,51 @@ main{
    ul{
        padding: 0;
    }
+
+ /* défilement */
+
+ .reveal-loaded .reveal [class*="reveal-"] {
+    opacity: 0!important;
+    animation: none!important;
+    transition: 0s!important;
+  }
+  
+  .reveal-loaded [class*="reveal-"]{
+    animation: revealAnimation 1s cubic-bezier(.5, 0, 0, 1) both;
+  }
+  
+  .reveal-loaded .reveal-2 {
+    animation-delay: .1s;
+  }
+  
+  .reveal-loaded .reveal-3 {
+    animation-delay: .2s;
+  }
+  
+  .reveal-loaded .reveal-4 {
+    animation-delay: .3s;
+  }
+  .reveal-loaded .reveal-5 {
+    animation-delay: .4s;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-loaded  [class*="reveal-"] {
+      animation: none!important;
+    }
+  }
+  
+  @keyframes revealAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
                     /******* Responsive webdesign *******/
 
 /**** mobile phone *****/
@@ -792,8 +802,6 @@ main{
     }
     .trait{
         display: none;
-       /* border-top: 0.3em solid rgba(255, 255, 255, 1);
-        align-self: center;*/
     }
     #linkMore .plus{
         width: 60px;
@@ -828,7 +836,6 @@ main{
     .headerNav ul{
         flex-direction: row;
         justify-content: space-around;
-       /* height: 40px;*/
         align-items: center;
         width: 100%;
         padding: 0;
@@ -851,11 +858,9 @@ main{
         background-color: #f9fafa;
         text-align: center;
         color:#1A2B6D;
-       /* margin-bottom: 20px;*/
         width: 75%;
     }
     .carteEntete p{
-        /*padding: 10px;*/
         width: 75%;
         text-align: center;
         margin-left: 100px;
@@ -959,11 +964,9 @@ main{
         background-color: #f9fafa;
         text-align: center;
         color:#1A2B6D;
-       /* margin-bottom: 20px;*/
         width: 75%;
     }
     .carteEntete p{
-        /*padding: 10px;*/
         width: 75%;
         text-align: center;
         margin-left: 100px;
@@ -974,12 +977,31 @@ main{
     }
          
 }
+
 @media screen and (min-width: 1200px){
       .carte{
           flex: 0 0 32%;
       }
      
 }
+
+@media screen and (min-width: 1024px){
+    main form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    main form button{
+        padding: 10px;
+        background-color: #1A2B6D;
+        color: white;
+        border: none;
+        grid-column: 1 / -1
+    }
+    main ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (max-width:840px){
     #expertisePage{
         display: flex;
@@ -1006,5 +1028,4 @@ main{
         margin: 10px;
     }
 }
-
 
