@@ -114,7 +114,7 @@ main{
         background-size: cover;
         align-self: start;
         margin-left: auto;
-       border-radius: 50%;
+      /* border-radius: 50%;*/
     }
     .blocImg{
         width:-webkit-fill-available;
@@ -729,12 +729,7 @@ main form input.invalid, main form textarea.invalid {
         width: auto;
         margin: 0;
     }
-    .bloc{
-        background: none;
-    }
-    .blocImg{
-      display: none;
-    } 
+   
      #expertisePage{
     display: flex;
     flex-direction: column;
@@ -772,54 +767,23 @@ main form input.invalid, main form textarea.invalid {
         width: 100%;
         margin: 0;
     }
-    .bloc{
-        background: none;
-    }
-    .blocImg{
-        display: none;
-    } 
     .blocContent{
-        display: flex;
-        flex-direction: row;
-        background-color: #191970;
-        color:white;
-        width: auto;
-        height: 320px;
-    }
-    .blocEnteteContent{
-        margin: 0;
-        width: auto;
+        margin-top: 0;
     }
     .blocEnteteHeader{
-        margin-left: 15px;
-        color: rgba(255, 255, 255, 1);
-        font-size: 1.2em;
-        width: 353px;
+        margin-top: 0.5em;
+        font-size: 1.5em;
     }
-    .blocEnteteContent p{
-        margin: 0;
-        color: rgba(255, 255, 255, 1);
-    }
-    .trait{
-        display: none;
-    }
-    #linkMore .plus{
-        width: 60px;
-        background-color:rgba(255, 255, 255, 1) ;
-        color: #191970;
+    .blocEnteteContent{
+        width: 70%;
     }
     #linkMore{
-        
-        padding-top: 230px;
+        width: 65%;
     }
-    #linkMore .savoir:hover{
-        background: rgba(255, 255,255, 1); 
-        color: #191970;
+    #linkMore .plus{
+        width: 15%;
     }
-    #linkMore .plus:hover{
-        background: rgb(212, 19,23, 1);
-        color:rgba(255, 255,255, 1);  ;
-     }
+  
     .service{
         margin: 0;
         text-align: center;
@@ -1015,7 +979,6 @@ main form input.invalid, main form textarea.invalid {
     }
     .blocItemElement1{
         width: 50%;
-        background: rgba(242, 242, 242, 1);
     }
     .blocItemElement2{
         width: 50%;
