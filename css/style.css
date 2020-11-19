@@ -177,11 +177,11 @@ main{
         justify-content: space-between;
     }
     .serviceItemsBloc{
-        margin: 25px;
+        margin: 2px;
         text-align: center;
         padding: 10px; 
-        width:80%; 
-        text-align: justify;
+        width:98%; 
+       /* text-align: justify;*/
         border: 0px solid rgba(0, 115, 159, 1);
         background-color: rgba(255, 255, 255, 1);
         border-radius: 0;
@@ -212,11 +212,11 @@ main{
           }
       }
       
-    .serviceItemsBlocCenter{
+   /* .serviceItemsBlocCenter{
         margin: auto;
         margin-bottom: 20px;
       
-    }
+    }*/
     .serviceItemsBloc h3{
         color: #1A2B6D;
     }
@@ -960,27 +960,44 @@ CAROUSEL
     #footer {
         padding: 6em 0 4em 0;
     }
-         
+    
 }
 @media only screen and (min-width:321px) and (max-width:768px){
+    #pageContent {
+        padding: 270px 20px;
+        padding-bottom: 100px;
+    }
       
     #mainHeader{
         height: 120px;
     }
     .headerNav{
         width: 100%;
-        padding: 0;
-        top: 50px;
+        top: 60px;
        /* margin-left: 55px;*/
+        padding-left: 0;
+        padding: 0px 20px;
     }
     .headerNav ul{
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        padding: 0;
+        background-color: #1A2B6D;
+    }
+    .headerNav li {
+        width: 100%;
+        text-align: left;
     }
     .headerNav a{
+        color: #f9fafa;
         margin: 0;
+    }
+    .headerNav ul li:hover{
+        background:#ffffff ;
+    }
+    .headerNav ul li a:hover{
+        color: #191970 ;
     }
     .blocContent{
         margin-top: 0;
@@ -991,6 +1008,9 @@ CAROUSEL
     }
     .blocEnteteContent{
         width: 70%;
+    }
+    .link{
+        left: 80px;
     }
     #linkMore{
         width: 65%;
