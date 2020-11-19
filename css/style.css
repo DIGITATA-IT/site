@@ -25,29 +25,40 @@ main{
 /*** Accueil***/
 
     #mainHeader{
+        
         display: flex;
         justify-content: space-between;
         height: 95px;
         width: 100%;
         position: absolute;
-        top: 0;
         background-color: #ffffff;
+        top: 0;
+       /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        top: 0;
+       
+        position: absolute;*/
     }
     img{
         max-width: 100%;
         height: auto;
     }
     .headerLogo{
-        display: block;
+         display: block;
          border: 0;
-        max-width: 40%;
+         max-width: 40%;
          padding: 5px;
          position: relative;
          height:153px;
-         margin: 0px;
+         margin: 0px;*/
+        /* padding: 5px;
+         position: relative;*/
      }
      .headerNav{
-        position: absolute;
+         position: absolute;
          width: 65%;
          top: 0px;
          padding-bottom: 10px;
@@ -56,14 +67,22 @@ main{
          justify-content: flex-end;
          display: none;
         padding-left: 200px;
+        /*position: absolute;
+        width: 100%;
+        top: 40px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;*/
          
      }
      .headerNav ul{
          list-style: none;
          padding: 0;
-         margin: 0;
          display: flex;
-         flex-direction: column;
+        /* flex-direction: column;*/
+        flex-flow: column nowrap;
+       /* margin-left: 90px;*/
      }
      .headerNav li{
           width: 160px;
@@ -93,11 +112,15 @@ main{
      }
      
      .headerNav a{
-         color:#1A2B6D ;
-         text-decoration: none;
+        color:#1A2B6D ;
+        /* text-decoration: none;
          font-size: 1.2em;
          display: block;
-         padding-left: 9px
+         padding-left: 9px*/
+         text-decoration: none;
+         font-family: Cantarell, Arial, sans-serif;
+         font-size: 1.2em;
+         display: block;
      }
      
      .headerNav ul ul{
@@ -107,14 +130,22 @@ main{
          display: block;
      }
      .menuToggle {
-        width: 54px;
-        height: 54px;
+       
         background-color: #191970;
+        width: 40px;
+        height: 40px;
         border: none;
         background-size: cover;
         align-self: start;
         margin-left: auto;
-      /* border-radius: 50%;*/
+      /* border-radius: 50%;
+      background-color: #191970;
+      border: none;
+      background-size: cover;
+      width: 40px;
+      height: 40px;
+      align-self: start;
+      margin-left: auto*/
     }
     .blocImg{
         width:-webkit-fill-available;
@@ -149,7 +180,7 @@ main{
         margin: 25px;
         text-align: center;
         padding: 10px; 
-        width: 46%; 
+        width:80%; 
         text-align: justify;
         border: 0px solid rgba(0, 115, 159, 1);
         background-color: rgba(255, 255, 255, 1);
@@ -200,6 +231,9 @@ main{
         margin-top: 0.2em;
         position: static;
         height: 290px;
+    }
+    .blocContentPropos{
+        height: 180px;
     }
     .blocEnteteHeader{
         font-size: 2em;
@@ -283,7 +317,7 @@ main{
         position: absolute;
         margin-top: 223px;
         top: 5px;
-        left: 100px;
+        left: 250px;
          
    }
    .link:hover{
@@ -305,7 +339,7 @@ main{
        display: flex;
        flex-wrap: wrap;
        justify-content: space-around;
-       margin-left: 150px;
+      /* margin-left: 150px;*/
     }
     /**** Fin Accueil ***/
 
@@ -460,21 +494,18 @@ main form input.invalid, main form textarea.invalid {
         align-items: center;
         width: 90%;
         justify-content: space-around;
-        margin-top: 150px;
-    }
-    .expertiseFirst{
-        display: flex;
-        flex-direction: row-reverse;
+        margin-top: 130px;
     }
     .expertiseItems{
         width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 390px;
         flex: 3;
-        min-height: 60vh;
-        
+        margin-left: 20px;
+    }
+    .expertiseItems p{
+        margin: 0;
     }
     .expertiseItems ul li{
         list-style-type: none;
@@ -485,15 +516,23 @@ main form input.invalid, main form textarea.invalid {
        width: 100%;
    }
    .missionItems{
-       height: 350px;
-       margin-bottom: 15px;
-       min-height: 0;
-       margin: 40px;
+       margin: 10px;
+   }
+   .missionItems p{
+       margin: 0;
+       margin-bottom: 2px;
+       color: #20303c;
+   }
+   .missionItems ul li{
+    color: #20303c;
+}
+   .rpaImg{
+       width: 40%;
+       margin: 0;
    }
 
 .expertiseHeader{
     width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
 }
@@ -509,14 +548,14 @@ main form input.invalid, main form textarea.invalid {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 0;
 }
-#propos{
+/*#propos{
     display: flex;
     flex-direction: column;
     margin-top: 0px;
     align-items: center;
     background-color: #f9fafa;
     color: #20303c;
-}
+}*/
 .missionHeader{
     width: 100%;
     height: 400px;
@@ -564,7 +603,7 @@ main form input.invalid, main form textarea.invalid {
 }
 .blocItemElement1{
     position: absolute;
-    width: 22%;
+    width: 15%;
     height: 268px;
     background-color: rgba(242, 242, 242, 1);
     z-index: 1;
@@ -576,7 +615,7 @@ main form input.invalid, main form textarea.invalid {
 }
 .blocItemElement2{
     position: absolute;
-    width: 22%;
+    width: 15%;
     height: 17em;
     box-sizing: border-box;
     border-left-style: none;
@@ -593,11 +632,14 @@ main form input.invalid, main form textarea.invalid {
      width: 100%;
 }
 .expertiseTitle{
-    font-size: 66px;
+    font-size: 30px;
     line-height: 1em;
-    margin: 65px 0px 47px 0;
+    margin: 80px 0px 30px 0;
     text-align: center;
     color: #1A2B6D;
+}
+#carousel2{
+    width: 100%;
 }
 
 /****** la page équipe *****/
@@ -617,7 +659,6 @@ main form input.invalid, main form textarea.invalid {
         padding: 10px;
         width: 75%;
         text-align: center;
-        margin-left: 100px;
     }
 
      .centre{
@@ -645,7 +686,7 @@ main form input.invalid, main form textarea.invalid {
     }
     .carte a figure img{
         max-width: 100%;
-        margin-left: 197px;
+        align-self: center;
     }
     .carte a figure figcaption{
         text-align: center;
@@ -710,176 +751,132 @@ main form input.invalid, main form textarea.invalid {
       transform: translateY(0px);
     }
   }
+  /**
+CAROUSEL
+ */
+.carousel {
+    position: relative;
+  }
+  
+  .carousel__container {
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .carousel__container::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  .carousel__item {
+    float: left;
+  }
+  
+  .carousel__next, .carousel__prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FFF url(right.svg) center center no-repeat;
+    background-size:  20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: -20px;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .carousel__next:hover, .carousel__prev:hover {
+    transform: scale(1.2)
+  }
+  
+  .carousel__prev {
+    background-image: url(left.svg);
+    right: auto;
+    left: -20px;
+  }
+  
+  .carousel__next--hidden, .carousel__prev--hidden {
+    opacity: 0;
+  }
+  
+  .carousel__pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+  }
+  
+  .carousel__pagination__button {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    box-shadow: 0 2px 5px #3232321a;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .carousel__pagination__button--active, .carousel__pagination__button:hover {
+    transform: scale(1.4);
+  }
+  
+  @media screen and (min-width: 800px) {
+    .carousel__pagination {
+      display: block;
+    }
+  }
+  
 
                     /******* Responsive webdesign *******/
 
 /**** mobile phone *****/
 
-@media only screen and (min-width:320px){
-    
-      main{
-          width: auto;
-          margin: 0;
-      }
-}
-
-@media only screen and (max-width:320px){
-    
-    main{
-        width: auto;
-        margin: 0;
-    }
-   
-     #expertisePage{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    align-content: center;
-    }
-    .blocItem{
-        width: 50%;
-    }
-    .blocItemElement1{
-        width: 50%;
-        background: rgba(242, 242, 242, 1);
-    }
-    .blocItemElement1{
-        width: 50%;
-    }
-    .blocItemText {
-        font: normal normal normal 15px/1.2em helvetica-w01-light,helvetica-w02-light,sans-serif;
-        color: #000000;
-        letter-spacing: normal;
-        text-align: left;
-        margin: 10px;
-    }
-
-  
-}
-
-
 /**** Tablet ****/
 
-@media only screen and (min-width:321px) and (max-width:768px){
-      
-    main{
-        width: 100%;
-        margin: 0;
-    }
-    .blocContent{
-        margin-top: 0;
-    }
-    .blocEnteteHeader{
-        margin-top: 0.5em;
-        font-size: 1.5em;
-    }
-    .blocEnteteContent{
-        width: 70%;
-    }
-    #linkMore{
-        width: 65%;
-    }
-    #linkMore .plus{
-        width: 15%;
-    }
-  
-    .service{
-        margin: 0;
-        text-align: center;
-    }
-    #mainHeader{
-        height: 126px;
-    }
-    .headerNav{
-        width: 100%;
-        padding: 0;
-        top: 82px;
-        margin-left: 3px;
-    }
-    .headerNav ul{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-    }
-
-   
-    .cartes.bloc {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .carte{ 
+@media screen and (min-width: 1200px){
+    .carte{
         flex: 0 0 32%;
-        display: flex;
     }
-    .carte a figure img{
-        max-width: 100%;
-    }
-    .carteEntete{
-        background-color: #f9fafa;
-        text-align: center;
-        color:#1A2B6D;
-        width: 75%;
-    }
-    .carteEntete p{
-        width: 75%;
-        text-align: center;
-        margin-left: 100px;
-    }
-
-    #footer {
-        padding: 3em 0 2em 0;
-    }
-
-        #footer .icons {
-            font-size: 1em;
-        }
-        #expertisePage{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin: 0;
-            align-content: center;
-        }
-        .blocItem{
-            width: 50%;
-        }
-        .blocItemElement1{
-            width: 50%;
-            background: rgba(242, 242, 242, 1);
-        }
-        .blocItemElement2{
-            width: 50%;
-        }
-        .blocItemText {
-            font: normal normal normal 15px/1.2em helvetica-w01-light,helvetica-w02-light,sans-serif;
-            color: #000000;
-            letter-spacing: normal;
-            text-align: left;
-            margin: 10px;
-        }
-    
+   
 }
 
-/**** Desktop ****/
-
-@media only screen and (min-width:769px){
+@media screen and (min-width: 1024px){
+  main form{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+  }
+  main form button{
+      padding: 10px;
+      background-color: #1A2B6D;
+      color: white;
+      border: none;
+      grid-column: 1 / -1
+  }
+  main ul{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width:768px){
 
     .headerNav{
         position: static;
         background-color: transparent;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         padding-left: 0px;
-        width: 62%;
+        width: 75%;
     }
     .headerNav ul{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:flex-end;
         height: 80px;
         align-items: center;
         width: 100%;
@@ -893,12 +890,15 @@ main form input.invalid, main form textarea.invalid {
         position: relative;
         height:100px;
     }
+
+    main ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .blocItemHeading{
-        margin: 15px 0 15px 0;
+        margin: 30px 0 30px 0;
     }
     .link{
-        left: 50px;
-        margin-top: 230px;
+        margin-top: 220px;
     }
      
     .menuToggle {
@@ -906,6 +906,27 @@ main form input.invalid, main form textarea.invalid {
         text-align: right;
         color: #191970;
     }
+    #expertisePage{
+        width: 100%;
+       /* margin: 0 auto;*/
+        display: flex;
+        flex-direction: row;
+        /*margin-top: 130px;*/
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+   
+    /*.blocItem{
+        width: 38%;
+        height: 48vh;
+    }
+    .blocItemElement1{
+        width: 25%;
+        height: 270px;
+    }
+    .blocItemElement2{
+        width: 25%;
+    }*/
     .centre{
         width: 75%;
         margin: 0 auto;
@@ -928,12 +949,12 @@ main form input.invalid, main form textarea.invalid {
         background-color: #f9fafa;
         text-align: center;
         color:#1A2B6D;
-        width: 75%;
+        width: 100%;
     }
     .carteEntete p{
-        width: 75%;
+        width: 80%;
         text-align: center;
-        margin-left: 100px;
+        margin-left: 5em;
     }
 
     #footer {
@@ -941,32 +962,42 @@ main form input.invalid, main form textarea.invalid {
     }
          
 }
-
-@media screen and (min-width: 1200px){
-      .carte{
-          flex: 0 0 32%;
-      }
-     
-}
-
-@media screen and (min-width: 1024px){
-    main form{
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+@media only screen and (min-width:321px) and (max-width:768px){
+      
+    #mainHeader{
+        height: 120px;
     }
-    main form button{
-        padding: 10px;
-        background-color: #1A2B6D;
-        color: white;
-        border: none;
-        grid-column: 1 / -1
+    .headerNav{
+        width: 100%;
+        padding: 0;
+        top: 50px;
+       /* margin-left: 55px;*/
     }
-    main ul{
-        grid-template-columns: repeat(3, 1fr);
+    .headerNav ul{
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
     }
-}
-
-@media screen and (max-width:840px){
+    .headerNav a{
+        margin: 0;
+    }
+    .blocContent{
+        margin-top: 0;
+    }
+    .blocEnteteHeader{
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+    .blocEnteteContent{
+        width: 70%;
+    }
+    #linkMore{
+        width: 65%;
+    }
+    #linkMore .plus{
+        width: 15%;
+    }
     #expertisePage{
         display: flex;
         flex-direction: column;
@@ -974,11 +1005,22 @@ main form input.invalid, main form textarea.invalid {
         margin: 0;
         align-content: center;
     }
-    .blocItem{
+    .expertiseContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .expertiseItems {
+        width: 100%;
+    }
+    .rpaImg{
+        width: 100%;
+    }
+    /*.blocItem{
         width: 50%;
     }
     .blocItemElement1{
         width: 50%;
+        background: rgba(242, 242, 242, 1);
     }
     .blocItemElement2{
         width: 50%;
@@ -989,6 +1031,45 @@ main form input.invalid, main form textarea.invalid {
         letter-spacing: normal;
         text-align: left;
         margin: 10px;
+    }*/
+   
+    .cartes.bloc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-}
+    .carte{ 
+        flex: 0 0 32%;
+        display: flex;
+    }
+    .carte a figure img{
+        max-width: 100%;
+    }
+    .carteEntete{
+        background-color: #f9fafa;
+        text-align: center;
+        color:#1A2B6D;
+        width: 100%;
+    }
+    .carteEntete p{
+        width: 100%;
+        text-align: center;
+    }
 
+    #footer {
+        padding: 3em 0 2em 0;
+    }
+
+    #footer .icons {
+        font-size: 1em;
+    }
+        
+}
+@media only screen and (min-width:320px){
+    
+    main{
+        width: auto;
+        margin: 0;
+    }
+   
+}
