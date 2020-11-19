@@ -1051,7 +1051,12 @@ CAROUSEL
         text-align: left;
         margin: 10px;
     }*/
-   
+    .missionBoxFirst{
+        width: 60%;
+    }
+    .missionBoxSecond{
+        width: 60%;
+    }
     .cartes.bloc {
         display: flex;
         flex-wrap: wrap;
