@@ -1052,10 +1052,16 @@ CAROUSEL
         margin: 10px;
     }*/
     .missionBoxFirst{
-        width: 60%;
+        width: 65%;
     }
     .missionBoxSecond{
-        width: 60%;
+        width: 65%;
+    }
+    .expertiseBoxFirst{
+        width: 65%;
+    }
+    .expertiseBoxSecond{
+        width: 65%;
     }
     .cartes.bloc {
         display: flex;
