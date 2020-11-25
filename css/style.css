@@ -852,6 +852,9 @@ CAROUSEL
   }
 }
 @media only screen and (min-width:768px){
+    body{
+        overflow-x: hidden;
+    }
 
     .headerNav{
         position: static;
@@ -937,6 +940,10 @@ CAROUSEL
     
 }
 @media only screen and (min-width:321px) and (max-width:768px){
+
+    body{
+        overflow-x: hidden;
+    }
     #pageContent {
         padding: 270px 20px;
         padding-bottom: 100px;
