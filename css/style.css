@@ -829,6 +829,9 @@ CAROUSEL
 /**** Tablet ****/
 
 @media screen and (min-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
     .carte{
         flex: 0 0 32%;
     }
@@ -836,6 +839,9 @@ CAROUSEL
 }
 
 @media screen and (min-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
   main form{
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
@@ -938,6 +944,11 @@ CAROUSEL
         padding: 6em 0 4em 0;
     }
     
+}
+@media only screen and (max-width:321px){
+    body{
+        overflow-x: hidden;
+    }
 }
 @media only screen and (min-width:321px) and (max-width:768px){
 
