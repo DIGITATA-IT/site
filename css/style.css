@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html, body {
-    position:relative;
+    position: fixed;
     overflow-x:hidden;
   }
 
