@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 html, body {
-    position: fixed;
     overflow-x:hidden;
   }
 
@@ -16,6 +15,7 @@ body{
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
 }
 main{
     display: flex;
