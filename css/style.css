@@ -50,15 +50,16 @@ main{
          margin: 0px;
      }
      .headerNav{
-         position: absolute;
-         width: 65%;
-         top: 0px;
-         padding-bottom: 10px;
-         display: flex;
-         flex-direction: row;
-         justify-content: flex-end;
-         display: none;
+        position: absolute;
+        width: 65%;
+        top: 0px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        display: none;
         padding-left: 200px;
+        z-index: 2;
          
      }
      .headerNav ul{
@@ -941,7 +942,7 @@ CAROUSEL
 @media only screen and (min-width:321px) and (max-width:768px){
 
     #pageContent {
-        padding: 270px 20px;
+        padding: 100px 20px;
         padding-bottom: 100px;
     }
       
@@ -963,7 +964,7 @@ CAROUSEL
     }
     .headerNav li {
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
     .headerNav a{
         color: #f9fafa;
@@ -1063,6 +1064,10 @@ CAROUSEL
     .carteEntete p{
         width: 100%;
         text-align: center;
+    }
+    figure{
+        margin: 0;
+        width: 100%;
     }
 
     #footer {
