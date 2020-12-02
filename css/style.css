@@ -232,7 +232,7 @@ main{
         height: 180px;
     }
     .blocEnteteHeader{
-        font-size: 2em;
+        font-size: 1.8em;
         margin-top: 1em;
         color: #191970;
         text-align: star;
@@ -981,7 +981,7 @@ CAROUSEL
     }
     .blocEnteteHeader{
         margin-top: 0.5em;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .blocEnteteContent{
         width: 75%;
