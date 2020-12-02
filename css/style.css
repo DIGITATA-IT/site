@@ -983,6 +983,9 @@ CAROUSEL
         margin-top: 0.5em;
         font-size: 1.3em;
     }
+    .blocItemText {
+        font: normal normal normal 13px/1.2em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    }
     .blocEnteteContent{
         width: 75%;
     }
