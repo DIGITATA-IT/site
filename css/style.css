@@ -903,6 +903,16 @@ CAROUSEL
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+    .missionItems p{
+        width: 62%;
+        margin-bottom: 6px;
+    }
+    .missionItemsSecond p{
+        width: 90%;
+    }
+    .missionItemsThird p{
+        width: 97%;
+    }
     .centre{
         width: 75%;
         margin: 0 auto;
